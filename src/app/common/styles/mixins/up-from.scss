@@ -1,0 +1,33 @@
+@mixin up-from($size) {
+
+	@if $size == 'compact' {
+		@media all and (min-width: 420px) {
+			@content;
+		}
+	}
+
+	@if $size == 'sm' {
+		@media all and (min-width: 768px) {
+			@content;
+		}
+	}
+
+	@if $size == 'md' {
+		@media all and (min-width: 992px) {
+			@content;
+		}
+	}
+
+	@if $size == 'lg' {
+		@media all and (min-width: 1200px) {
+			@content;
+		}
+	}
+
+	@else {
+		@media all and (min-width: $size) {
+			@content;
+		}
+	}
+
+}

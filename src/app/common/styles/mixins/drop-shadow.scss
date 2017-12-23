@@ -1,0 +1,7 @@
+@mixin drop-shadow($size: null) {
+	$shadow-size: 7px;
+	@if ($size) {
+		$shadow-size: $size;
+	}
+	box-shadow: 0 0 $shadow-size $color-dust;
+}

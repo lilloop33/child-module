@@ -1,0 +1,19 @@
+@import '../tools';
+
+
+.form-controls-bordered {
+	.form__input,
+	.form__textarea {
+		border: 1px solid $color-hoary;
+	}
+}
+
+
+.form-group {
+	position: relative;
+}
+
+
+
+
+

@@ -1,0 +1,11 @@
+# ide
+.idea/
+
+# compiled
+dist/
+
+# dependencies
+node_modules/
+
+
+

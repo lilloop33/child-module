@@ -1,0 +1,46 @@
+.ico {
+	position: relative;
+	cursor: pointer;
+
+	&--plus {
+		width: 1.7em;
+		height: 1.7em;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: .3em;
+
+		&:before {
+			content: '';
+			position: absolute;
+			border-bottom: 1px solid $color-mud;
+			width: 60%;
+			left: 20%;
+			top: 50%;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			border-left: 1px solid $color-mud;
+			height: 60%;
+			top: 20%;
+			left: 50%;
+		}
+	}
+
+}
+
+.ico--primary {
+	background-color: $color-pond;
+
+	&:hover {
+		background-color: darken($color-pond, 5%);
+	}
+
+	&.ico--plus::before,
+	&.ico--plus::after {
+		border-color: #fff;
+	}
+}

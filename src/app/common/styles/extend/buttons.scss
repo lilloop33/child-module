@@ -1,0 +1,39 @@
+.btn.btn--primary {
+	color: #fff;
+	border-radius: 0;
+	font-weight: 700;
+	padding: .5em 1.2em;
+	background-color: $color-pond;
+	font-size: 1.429em;
+
+	&:hover {
+		background-color: lighten($color-pond, 5%);
+	}
+}
+
+.btn.btn--secondary {
+	color: $color-pond;
+	border-radius: 0;
+	font-weight: 700;
+	padding: .5em 1.2em;
+	background-color: white;
+	font-size: 1.429em;
+	border: 1px solid $color-pond;
+
+	&:hover {
+		background-color: darken(white, 5%);
+	}
+}
+
+.btn.btn--exquisite {
+	color: $color-yolk;
+	border-radius: 0;
+	font-weight: 700;
+	padding: .5em 1.2em;
+	background-color: $color-pond;
+	font-size: 1.429em;
+
+	&:hover {
+		background-color: lighten($color-pond, 5%);
+	}
+}
